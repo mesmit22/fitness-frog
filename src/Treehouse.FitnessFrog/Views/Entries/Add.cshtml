@@ -28,12 +28,12 @@
 
             <div class="form-group">
                 <label for="Intensity" class="control-label">Intensity</label>
-                <input type="text" id="Intensity" name="Intensity" class="form-control" value="@ViewBag.Intenstiy" />
+                <input type="text" id="Intensity" name="Intensity" class="form-control" value="@ViewBag.Intensity" />
             </div>
 
             <div class="form-group">
                 <label for="Exclude" class="control-label">Exclude</label>
-                <input type="text" id="Exclude" name="Exclude" class="form-control" value="@ViewBag.Exclude" />
+                <input type="text" id="Exclude" name="Exclude" class="form-control" value="@(ViewBag.Exclude != null ? ViewBag.Exclude.ToString() : "")" />
             </div>
 
         </div>
